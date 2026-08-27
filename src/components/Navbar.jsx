@@ -30,7 +30,7 @@ function Navbar() {
           ))}
 
           <a
-            href="/images/PREM_KUMAR_R_Frontend1_Resume_(1)(1).pdf"
+            href="\Premkumarr_resume.pdf"
             download
             className="rounded-lg border border-purple-500/50 px-4 py-2 text-sm text-purple-400 transition hover:bg-purple-500 hover:text-white"
           >
@@ -60,7 +60,7 @@ function Navbar() {
             ))}
 
             <a
-              href="/images/PREM_KUMAR_R_Frontend1_Resume_(1)(1).pdf"
+              href="\Premkumarr_resume.pdf"
               download
               className="w-fit rounded-lg border border-purple-500 px-4 py-2 text-purple-400"
             >
