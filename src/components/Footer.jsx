@@ -10,12 +10,11 @@ function Footer() {
       </p>
 
       <p>
-        Built with ❤️ using{" "}
-        <span className="text-purple-400">
-          React & Tailwind CSS
-        </span>
-      </p>
-
+  Designed & developed using{" "}
+  <span className="text-purple-400">
+    React & Tailwind CSS
+  </span>
+</p>
     </footer>
   );
 }

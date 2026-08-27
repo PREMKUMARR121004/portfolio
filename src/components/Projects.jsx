@@ -8,9 +8,9 @@ const projects = [
     github: "https://github.com/PREMKUMARR121004/shopeaseproject1",
   },
   {
-    title: "Job Tracker",
+    title: "Job Tracker Website",
     description:
-      "A task management application to organize tasks and improve productivity.",
+        "A responsive job tracker application to manage job applications and track their status efficiently.",
     image: "/images/jobtracker.png",
     live: "https://job-trackerproject2.netlify.app/",
     github: "https://github.com/PREMKUMARR121004/jobTrackerproject2",
@@ -19,9 +19,9 @@ const projects = [
     title: "Portfolio Website",
     description:
       "Personal portfolio website to showcase my projects and skills.",
-    image: "/portfolio.png",
-    live: "#",
-    github: "#",
+    image: "/images/portfolio.png",
+    live: "https://premkumarrportfolio.netlify.app/",
+    github: "https://github.com/PREMKUMARR121004/portfolio",
   },
 ];
 
