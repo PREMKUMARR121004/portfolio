@@ -8,17 +8,12 @@ function Navbar() {
     ["About", "#about"],
     ["Skills", "#skills"],
     ["Projects", "#projects"],
- 
   ];
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/5 bg-[#050812]/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-
-        <a
-          href="#home"
-          className="text-xl font-bold"
-        >
+        <a href="#home" className="text-xl font-bold">
           Prem <span className="text-purple-500">Kumar.R</span>
         </a>
 
@@ -35,7 +30,7 @@ function Navbar() {
           ))}
 
           <a
-            href="/Prem-Kumar-Resume.pdf"
+            href="/images/PREM_KUMAR_R_Frontend1_Resume_.pdf"
             download
             className="rounded-lg border border-purple-500/50 px-4 py-2 text-sm text-purple-400 transition hover:bg-purple-500 hover:text-white"
           >
@@ -44,10 +39,7 @@ function Navbar() {
         </div>
 
         {/* Mobile button */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="text-2xl md:hidden"
-        >
+        <button onClick={() => setOpen(!open)} className="text-2xl md:hidden">
           {open ? "✕" : "☰"}
         </button>
       </nav>
@@ -68,7 +60,7 @@ function Navbar() {
             ))}
 
             <a
-              href="/Prem-Kumar-Resume.pdf"
+              href="/images/PREM_KUMAR_R_Frontend1_Resume_.pdf"
               download
               className="w-fit rounded-lg border border-purple-500 px-4 py-2 text-purple-400"
             >
