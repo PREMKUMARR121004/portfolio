@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050812;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   CUBE
+========================= */
+
+.cube-scene {
+  position: relative;
+  width: 420px;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+/* Main cube */
+
+.cube {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  transform-style: preserve-3d;
+  animation: cubeRotate 10s linear infinite;
+}
+
+.cube-face {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border: 2px solid #8b5cf6;
+  background: rgba(79, 70, 229, 0.04);
+  box-shadow:
+    0 0 12px rgba(139, 92, 246, 0.8),
+    inset 0 0 25px rgba(99, 102, 241, 0.08);
+}
+
+/* Cube faces */
+
+.cube-front {
+  transform: translateZ(95px);
+}
+
+.cube-back {
+  transform: rotateY(180deg) translateZ(95px);
+}
+
+.cube-right {
+  transform: rotateY(90deg) translateZ(95px);
+}
+
+.cube-left {
+  transform: rotateY(-90deg) translateZ(95px);
+}
+
+.cube-top {
+  transform: rotateX(90deg) translateZ(95px);
+}
+
+.cube-bottom {
+  transform: rotateX(-90deg) translateZ(95px);
+}
+
+/* Cube animation */
+
+@keyframes cubeRotate {
+  0% {
+    transform: rotateX(-15deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateX(15deg) rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateX(-15deg) rotateY(360deg);
+  }
+}
+
+/* Platform */
+
+.cube-platform {
+  position: absolute;
+  bottom: 50px;
+  width: 280px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #6d28d9;
+  background: rgba(76, 29, 149, 0.15);
+  box-shadow:
+    0 0 30px rgba(124, 58, 237, 0.6),
+    0 0 80px rgba(79, 70, 229, 0.25);
+  animation: platformGlow 3s ease-in-out infinite;
+}
+
+@keyframes platformGlow {
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scaleX(1.12);
+    opacity: 1;
+  }
+}
+
+/* Small floating cubes */
+
+.small-cube {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #8b5cf6;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.8);
+  transform: rotate(20deg);
+  animation: floatCube 4s ease-in-out infinite;
+}
+
+.small-one {
+  right: 25px;
+  top: 45px;
+}
+
+.small-two {
+  left: 35px;
+  top: 130px;
+  width: 38px;
+  height: 38px;
+  animation-delay: 1s;
+}
+
+.small-three {
+  right: 60px;
+  bottom: 115px;
+  width: 30px;
+  height: 30px;
+  animation-delay: 2s;
+}
+
+@keyframes floatCube {
+  0%,
+  100% {
+    transform: translateY(0) rotate(20deg);
+  }
+
+  50% {
+    transform: translateY(-25px) rotate(65deg);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 640px) {
+  .cube-scene {
+    width: 320px;
+    height: 350px;
+    transform: scale(0.75);
+  }
+
+  .cube {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cube-face {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cube-front {
+    transform: translateZ(75px);
+  }
+
+  .cube-back {
+    transform: rotateY(180deg) translateZ(75px);
+  }
+
+  .cube-right {
+    transform: rotateY(90deg) translateZ(75px);
+  }
+
+  .cube-left {
+    transform: rotateY(-90deg) translateZ(75px);
+  }
+
+  .cube-top {
+    transform: rotateX(90deg) translateZ(75px);
+  }
+
+  .cube-bottom {
+    transform: rotateX(-90deg) translateZ(75px);
+  }
+}
