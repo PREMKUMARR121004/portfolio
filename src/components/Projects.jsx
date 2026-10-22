@@ -15,6 +15,25 @@ const projects = [
     live: "https://job-trackerproject2.netlify.app/",
     github: "https://github.com/PREMKUMARR121004/jobTrackerproject2",
   },
+  
+  {
+    title: "PhotoStudio Booking Web Application",
+    description:
+      " Developed a full-stack photography booking application using React.js, Node.js, Express.js, and MongoDB.",
+    image: "/images/photostudiobooking.png",
+    live: "https://photostudio-booking-project3.vercel.app ",
+    github:"https://github.com/PREMKUMARR121004/photostudio_booking",
+    
+  },
+  {
+    title: "Return & Refund Abuse Detection API ",
+    description:
+      "Developed RESTful APIs for user authentication, refund creation, refund history, and refund status management.",
+    image: "/images/refund.png",
+    github:"https://github.com/PREMKUMARR121004/refund-abuse-detection-api",
+    
+
+  },
   {
     title: "Portfolio Website",
     description:

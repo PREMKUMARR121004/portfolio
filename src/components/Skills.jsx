@@ -19,6 +19,27 @@ const skills = [
     name: "Tailwind CSS",
     icon: '/images/tcss.png',
   },
+   {
+    name: "Node.js",
+    icon: "/images/nodejs (2).png",
+  },
+  {
+    name: "Express.js",
+    icon: "/images/expressjs.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "/images/mongo.png",
+  },
+  
+   {
+    name: "Thunder Client",
+    icon: "/images/thunderclient.png",
+  },
+   {
+    name: "Postman",
+    icon: "/images/postman.png",
+  },
   {
     name: "Git",
     icon: '/images/gith.png',
@@ -27,6 +48,7 @@ const skills = [
     name: "GitHub",
     icon: '/images/github.png',
   },
+  
 ];
 
 function Skills() {

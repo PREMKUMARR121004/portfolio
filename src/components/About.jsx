@@ -27,11 +27,7 @@ function About() {
             </h2>
 
             <p className="mt-5 max-w-xl leading-7 text-gray-400">
-              I'm a frontend developer with a strong foundation
-              in HTML, CSS, JavaScript and React. I enjoy turning
-              complex problems into simple and intuitive
-              designs.
-            </p>
+             I'm a MERN Stack and Backend Developer with hands-on experience building web applications using JavaScript, React.js, Node.js, Express.js, and MongoDB. Proficient in developing RESTful APIs, implementing JWT authentication, role-based authorization, and integrating frontend interfaces with backend services. Familiar with API testing, database management, debugging, and Git/GitHub.. </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-3 md:grid-cols-3">
 
@@ -66,7 +62,7 @@ function About() {
                 </p>
 
                 <p className="mt-2 text-sm text-gray-500">
-                  React Developer
+                  MERN stack || Backend Developer
                 </p>
 
               </div>

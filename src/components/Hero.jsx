@@ -31,7 +31,7 @@ function Hero() {
 
           <h2 className="mt-6 text-3xl font-bold sm:text-4xl">
             <span className="text-purple-500">
-              Frontend
+              MERN Stack
             </span>{" "}
             Developer
             <span className="ml-1 animate-pulse text-purple-500">
